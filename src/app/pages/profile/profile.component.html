@@ -1,1 +1,53 @@
-<p>profile works!</p>
+<app-navigation title='PROFILE'></app-navigation>
+
+<app-navigation title='PROFILE'></app-navigation>
+<div class='profile-container'>
+  <div class='content-container'>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <img mat-card-avatar src="https://scontent.fceb2-1.fna.fbcdn.net/v/t1.6435-9/243273204_2660629834083766_540338773399508303_n.jpg?_nc_cat=101&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFt5MhJ6EEdla_HHhR6meWwr3HbSPBIkvGvcdtI8EiS8ff7PdzQhn28cCE-jl9knQsJpoEbFXoj5P7Z4BOjPpBB&_nc_ohc=rlA6gmzLUkAAX9MCbFg&_nc_ht=scontent.fceb2-1.fna&oh=cb0a88f373304a312c340111e0003796&oe=6195BE4E" alt="avatar" class='profile'>
+        <mat-card-title>Loreno, Luigi</mat-card-title>
+        <mat-card-subtitle>BSIT-3E</mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t31.18172-8/13416806_897715033708597_2778033012670966476_o.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFe-4G8eleVtyZNs_8Pl1_yOLBogb3K9hU4sGiBvcr2FcIBsHYX1pgFx8hYQ_C2EVNfYzRYg_om5nWW12SA9ZCR&_nc_ohc=4FAdXvvlv1kAX8hmyg3&_nc_ht=scontent.fceb2-2.fna&oh=b919f15ba2cff3999de9fb57003ed4eb&oe=61959980" alt="luigi" class='luigi-photo'>
+        <mat-list>
+          <mat-list-item>
+            <mat-icon>school</mat-icon>
+            <p>Name: Eastern Visayas State University</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>info</mat-icon>
+            <p>Course: BSIT</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>done</mat-icon>
+            <p>Age: 28</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>location_on</mat-icon>
+            <p>Address: Brgy. 109-A, Tacloban City</p>
+          </mat-list-item>
+
+          <mat-list-item>
+            <mat-icon>phone_contact</mat-icon>
+            <p>Contact #: 09123456789</p>
+          </mat-list-item>
+
+          <mat-card-actions>
+            <button mat-button (click)='isClickLike=!isClickLike'
+                    [ngClass]='{"like" : isClickLike }' ><mat-icon>thumb_up</mat-icon></button>
+            <button mat-button (click)='isClickHeart=!isClickHeart'
+                    [ngClass]='{"heart" : isClickHeart }'><mat-icon>favorite</mat-icon></button>
+          </mat-card-actions>
+
+
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

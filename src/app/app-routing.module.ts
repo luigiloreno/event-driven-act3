@@ -9,6 +9,8 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'profile', component:ProfileComponent},
   {path:'gallery', component:GalleryComponent},
+  {path:'**',component:HomeComponent},
+
 ];
 
 @NgModule({
